@@ -3,15 +3,26 @@
     --main-text-color: #757575;
     --accent-color: #2196F3;
     --hero-footer-background: #2F303A;
+    --main-site-background: #FFFFFF;
+    --second-site-background: #E5E5E5;
+    --header-logo-color: #000000;
+    --footer-logo-color: #ffffff;
+    --footer-text-color: #ffffff;
+    --hero-title-color: #ffffff;
+    --hero-btn-color: #ffffff;
+    --hero-btn-background: #2196F3;
+    --team-item-background: #ffffff;
+
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-color);
-    background: #FFFFFF;
+    background: var(--main-site-background);
 }
 
-.header-list .active {
+.header-nav-list .active {
     color: var(--accent-color);
 }
 
@@ -50,17 +61,24 @@ body {
 }
 
 .header-logo-span {
-    color: #000000;
+    color: var(--header-logo-color);
 }
 
-.header-link,
+.header-nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
 .header-mail,
 .header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: inherit;
+    color: var(--main-text-color);
 }
 
 .header .link:hover,
@@ -86,11 +104,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--hero-title-color);
 }
 
 .hero-btn {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -99,7 +117,10 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--hero-btn-color);
+    background: var(--hero-btn-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* -------- features -------- */
@@ -133,7 +154,11 @@ body {
 /* -------- team -------- */
 
 .team {
-    background: #F5F4FA;
+    background: var(--second-site-background);
+}
+
+.team-item {
+    background-color: var(--team-item-background);
 }
 
 .team-item-title {
@@ -160,7 +185,7 @@ body {
 }
 
 .footer-logo-span {
-    color: #FFFFFF;
+    color: var(--footer-logo-color);
 }
 
 .footer-item-text {
@@ -168,7 +193,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--footer-text-color);
 }
 
 .footer-mail,
@@ -183,27 +208,32 @@ body {
 
 /* -------- portfolio -------- */
 
+
+
 .portfolio-btn {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: inherit;
+    color: inhe rit;
+    background: var(--second-site-background);
+    border-radius: 4px;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    color: #FFFFFF;
+    color: var(--hero-btn-color);
+    background: var(--hero-btn-background);
 }
 
 .portfolio-item-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--title-color);
 }
 
 .portfolio-item-text {
