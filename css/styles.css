@@ -4,7 +4,7 @@
     --accent-color: #2196F3;
     --hero-footer-background: #2F303A;
     --main-site-background: #FFFFFF;
-    --second-site-background: #E5E5E5;
+    --second-site-background: #F5F4FA;
     --header-logo-color: #000000;
     --footer-logo-color: #ffffff;
     --footer-text-color: #ffffff;
@@ -12,8 +12,6 @@
     --hero-btn-color: #ffffff;
     --hero-btn-background: #2196F3;
     --team-item-background: #ffffff;
-
-
 }
 
 body {
@@ -32,6 +30,7 @@ body {
 
 .link {
     text-decoration: none;
+
 }
 
 .visually-hidden {
@@ -229,11 +228,15 @@ body {
     background: var(--hero-btn-background);
 }
 
+.portfolio-link {
+    color: inherit;
+}
+
 .portfolio-item-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-color);
+    color: inherit;
 }
 
 .portfolio-item-text {
